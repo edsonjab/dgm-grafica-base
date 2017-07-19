@@ -20,12 +20,49 @@
 
 // Optional heading
 .panel-heading {
+  position: relative;
   padding: $panel-heading-padding;
   border-bottom: 1px solid transparent;
   @include border-top-radius(($panel-border-radius - 1));
 
   > .dropdown .dropdown-toggle {
     color: inherit;
+  }
+
+  .collpase-button {
+    border: 1px solid #555;
+    outline: 0;
+    background: 0 0;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    margin-top: -15px;
+
+    &::before,
+    &::after {
+      content: " ";
+      display: block;
+      position: absolute;
+      background-color: $text-color;
+    }
+
+    &::before {
+      width: 18px;
+      height: 1px;
+      top: 50%;
+      left: 5px;
+    }
+
+    &.collapsed::after {
+      width: 1px;
+      height: 18px;
+      top: 5px;
+      left: 50%;
+    }
   }
 }
 

@@ -37,8 +37,9 @@
 
           <section id="config" class="separator">
             <h2 class="section-title">Configuración básica</h2>
-
-            <p><strong>Es importante no descargar ningún archivo</strong>, se deben ocupar únicamente los alojados en nuestro CDN, ya que estos podrán cambiar de manera constante y sin previo aviso. </p>
+            <p>En datos.gob.mx utilizamos nuestro navbar y footer como componentes, para ello, cada aplicacioón necesita <a href="https://github.com/webcomponents/webcomponentsjs" target="_blank">webcomponentsjs</a> y <a href="https://github.com/Polymer/polymer" target="_blank">polymer</a> para poder utilizar dichos componentes.</p>
+            <p>Puedes agregar <strong>webcomponents</strong> y <strong>polymer</strong> utilizando <a href="https://bower.io/" target="_blank"><strong>bower</strong></a>.</p>
+            <p><strong>Es importante no descargar ningún archivo de estilos ni de javascript básicos como bootstrap y jquery</strong>, porque en nuestros archivos de estilos y de javascript ya vienen incluidas esas librerías, así es que se deben ocupar únicamente los alojados en nuestro CDN, ya que estos podrán cambiar de manera constante y sin previo aviso. </p>
 
             <ol class="bottom-buffer space">
               <li class="">Copie la ruta de la siguiente liga de nuestra hoja de estilos que se encontrará alojada en nuestro CDN: <code class="small">https://cdn.datos.gob.mx/bower_components/dgm-style/main.css</code></li>
@@ -85,6 +86,8 @@
           <section class="separator">
             <h2 class="section-title">Ejemplo básico</h2>
             <p>Este es el template básico para agregar una nueva página. Para que el framework funcione correctamente se debe incorporar la liga de los estilos dentro de la etiqueta <code>&lt;head&gt;</code>, y la liga del script antes de cerrarse la etiqueta <code>&lt;body&gt;</code>.</p>
+            <p><strong>NOTA:</strong></p>
+            <p>Recuerda que necesitas instalar las dependencias con <a href="https://bower.io/" target="_blank">bower</a> de webcomponentsjs y polymer para utilizar nuestros componentes de <strong>navbar</strong> y <strong>footer</strong>.</p>
             <div class="highlight"><pre><code class="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
 <span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"es"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;head&gt;</span>
@@ -93,9 +96,13 @@
     <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"width=device-width, initial-scale=1"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;title&gt;</span>Ejemplo de nueva página para datos.gob.mx<span class="nt">&lt;/title&gt;</span>
 
+    <span class="c">&lt;!-- webcomponents y polymer --&gt;</span>
+    <span class="nt">&lt;script</span> <span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"bower_components/webcomponentsjs/webcomponents-lite.min.js"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">"bower_components/polymer/polymer.html"</span> <span class="na">rel=</span><span class="s">"import"</span><span class="nt">&gt;</span>
+
     <span class="c">&lt;!-- navbar y footer de DGM --&gt;</span>
-    <span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">"https://cdn.datos.gob.mx/bower_components/dgm-navbar/dgm-navbar.html"</span>  <span class="na">rel=</span><span class="s">"import"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">"https://cdn.datos.gob.mx/bower_components/dgm-footer/dgm-footer.html"</span>  <span class="na">rel=</span><span class="s">"import"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">"https://cdn.datos.gob.mx/bower_components/dgm-navbar/dgm-navbar.html"</span> <span class="na">rel=</span><span class="s">"import"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">"https://cdn.datos.gob.mx/bower_components/dgm-footer/dgm-footer.html"</span> <span class="na">rel=</span><span class="s">"import"</span><span class="nt">&gt;</span>
 
     <span class="c">&lt;!-- CSS --&gt;</span>
     <span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">"/favicon.ico"</span> <span class="na">rel=</span><span class="s">"shortcut icon"</span><span class="nt">&gt;</span>
@@ -196,14 +203,12 @@
             <dl class="top-buffer">
               <dt>#000</dt>
               <dd class="dgm-example-color" style="background-color:#000"></dd>
-              <dt>#272829</dt>
-              <dd class="dgm-example-color" style="background-color:#272829"></dd>
-              <dt>#393c3e</dt>
-              <dd class="dgm-example-color" style="background-color:#393c3e"></dd>
               <dt>#545454</dt>
               <dd class="dgm-example-color" style="background-color:#545454"></dd>
-              <dt>#ddd</dt>
-              <dd class="dgm-example-color" style="background-color:#ddd"></dd>
+              <dt>#9b9b9b</dt>
+              <dd class="dgm-example-color" style="background-color:#9b9b9b"></dd>
+              <dt>#d8d8d8</dt>
+              <dd class="dgm-example-color" style="background-color:#d8d8d8"></dd>
               <dt>#f6f6f6</dt>
               <dd class="dgm-example-color" style="background-color:#f6f6f6"></dd>
               <dt>#fff</dt>
@@ -917,7 +922,7 @@
           </section>
 
           <section class="separator">
-            <h2 class="section-title">Tipografía</h2>
+            <h2 class="section-title">Textos</h2>
             <p>El tamaño de fuente estandarizado es de 18px, con un interlineado de 1.428. Esto se aplica a todo el contenido dentro de body. El tamaño mínimo recomendable para el texto es de 16px.</p>
             <p>Para más información ingrese a: <a href="tipografia.html">ejemplos de caso de uso</a>.</p>
             <div class="example">
@@ -1249,7 +1254,7 @@
 
           <div class="dgm-callout dgm-callout-warning bottom-buffer">
             <h5>Por razones de rendimiento, el tooltip se deberá inicializar manualmente:</h5>
-            <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nx">$gmx</span><span class="p">(</span><span class="kd">document).ready</span><span class="p">(function()</span> <span class="p">{</span>
+            <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nx">$</span><span class="p">(</span><span class="kd">document).ready</span><span class="p">(function()</span> <span class="p">{</span>
   <span class="nx">$</span><span class="p">(</span><span class="s1">'[data-toggle="tooltip"]'</span><span class="p">).</span><span class="nx">tooltip</span><span class="p">();</span>
 <span class="p">});</span>
 </code></pre></div>
@@ -1419,9 +1424,6 @@
           <section class="separator">
             <h2 class="section-title">Selector de fechas (datepicker)</h2>
             <p>El selector de fechas (Datepicker) nos proporciona un calendario personalizable, en el cual podremos realizar selecciones de fechas y asociarlo a elementos HTML.</p>
-            <div class="example">
-              <div class="datepicker-example"></div>
-            </div>
           </section>
           <section class="separator">
             <h4>Modo de uso</h4>
@@ -1453,7 +1455,7 @@
 <span class="nt">&lt;/div&gt;</span>
 ...</code></pre></div>
             <h6>Javascript:</h6>
-            <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nx">$gmx</span><span class="p">(</span><span class="kd">document).ready</span><span class="p">(function()</span> <span class="p">{</span>
+            <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nx">$</span><span class="p">(</span><span class="kd">document).ready</span><span class="p">(function()</span> <span class="p">{</span>
   <span class="nx">$</span><span class="p">(</span><span class="s1">'#calendar'</span><span class="p">).</span><span class="nx">datepicker</span><span class="p">();</span>
 <span class="p">});</span>
 </code></pre></div>
@@ -1480,7 +1482,7 @@
 ...</code></pre></div>
 
             <h6>Javascript:</h6>
-            <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nx">$gmx</span><span class="p">(</span><span class="kd">document).ready</span><span class="p">(function()</span> <span class="p">{</span>
+            <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nx">$</span><span class="p">(</span><span class="kd">document).ready</span><span class="p">(function()</span> <span class="p">{</span>
   <span class="nx">$</span><span class="p">(</span><span class="s1">'#calendarYear'</span><span class="p">).</span><span class="nx">datepicker</span><span class="p">({changeYear: true});</span>
 <span class="p">});</span>
 </code></pre></div>
