@@ -1,0 +1,40 @@
+//
+// DGM File upload styles
+// ----------------------------------
+
+.file-uploader                              { height: 100%; margin: 0 auto; border: 2px dashed rgba(0,0,0,0.2); border-radius: 8px; position: relative; text-align: center; }
+.file-uploader img                          { width: 100%; height: 100%; position: absolute; left: 0; top: 0; }
+.cover-photo-upload                         { display: block; height: 235px; margin-top: 20px; }
+.cover-photo-upload.category                { margin-top: 40px; }
+.grid-photo-upload                          { max-width: 325px; height: 285px; margin: 0 auto; }
+.gallery-photo-upload                       { height: 200px; margin-bottom: 20px; }
+.gallery-photo-upload > .file-uploader img  { width: auto; height: auto; max-width: 100%; max-height: 100%; position: absolute; left: 50%; top: auto; transform: translateX(-50%); }
+.data-import                                { height: 250px; }
+.file-uploader .uploader-legend             { width: 300px; height: 180px; margin: 0 auto; position: relative; z-index: 100; top: 50%; transform: translateY(-50%); }
+.uploaded .file-uploader .uploader-legend   { background-color: rgba(0,0,0,0.2); border-radius: 5px; }
+.file-uploader .icons-container             { width: 82px; height: 84px; margin: 0 auto; overflow: hidden; position: relative; }
+.file-uploader .icons-container .glyphicon  { position: absolute; left: 50%; top: 0; transform: translateX(-50%); }
+.file-uploader .glyphicon-cloud-upload      { font-size: 80px; color: #ccc; }
+.file-uploader h2                           { text-align: center; margin-top: 10px; font-size: 40px; color: #ccc; }
+.file-uploader p                            { text-align: center; font-size: 18px; color: #aaa; }
+.file-uploader p > span                     { color: #999; text-decoration: underline; cursor: pointer; }
+.uploaded .file-uploader p                  { color: #ccc; }
+.uploaded .file-uploader p > span           { color: #fff; }
+.file-uploader input                        { display: none; }
+.dragging .file-uploader,
+.uploading .file-uploader                   { background-color: rgba(99,169,261,0.07); border-color: #63a9dd; }
+.file-uploader .icons-container .glyphicon-refresh              { left: 30px; }
+.file-uploader .icons-container .glyphicon-ok,
+.file-uploader .icons-container .glyphicon-remove               { left: 41px; }
+.file-uploader .icons-container .glyphicon-refresh,
+.file-uploader .icons-container .glyphicon-ok,
+.file-uploader .icons-container .glyphicon-remove,
+.dragging .file-uploader .icons-container .glyphicon-refresh,
+.dragging .file-uploader .icons-container .glyphicon-ok         { display: inline-block; font-size: 25px; color: #6fc67f; top: 90px; transition: all 1s; }
+.dragging .file-uploader .icons-container .glyphicon-remove     { display: none; }
+.file-uploader .icons-container .glyphicon-refresh              { animation: spin 1s linear infinite; }
+.file-uploader .icons-container .glyphicon-remove               { color: #de6262; }
+.uploading .file-uploader .icons-container .glyphicon-refresh   { top: 30px; }
+.uploaded .file-uploader .icons-container .glyphicon-refresh    { top: -35px; }
+.uploaded .file-uploader .icons-container .glyphicon-ok         { top: 30px; }
+.failed .file-uploader .icons-container .glyphicon-remove       { top: 30px; }

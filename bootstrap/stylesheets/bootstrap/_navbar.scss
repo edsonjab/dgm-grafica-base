@@ -462,7 +462,7 @@
       &,
       &:hover,
       &:focus {
-        background-color: $navbar-default-link-active-bg;
+        background-color: red;
         color: $navbar-default-link-active-color;
       }
     }
@@ -533,7 +533,7 @@
   border-color: $navbar-inverse-border;
 
   .navbar-brand {
-    color: $navbar-inverse-brand-color;
+    color: $dgm-white;
     &:hover,
     &:focus {
       color: $navbar-inverse-brand-hover-color;
@@ -547,12 +547,12 @@
 
   .navbar-nav {
     > li > a {
-      color: $navbar-inverse-link-color;
+      color: $dgm-white;
+      font-size: 12px;
 
       &:hover,
       &:focus {
-        color: $navbar-inverse-link-hover-color;
-        background-color: $navbar-inverse-link-hover-bg;
+        background-color: $dgm-texts;
       }
     }
     > .active > a {
@@ -596,7 +596,7 @@
       &,
       &:hover,
       &:focus {
-        background-color: $navbar-inverse-link-active-bg;
+        background-color: $dgm-texts;
         color: $navbar-inverse-link-active-color;
       }
     }

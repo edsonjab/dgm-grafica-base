@@ -26,3 +26,19 @@
     color: $breadcrumb-active-color;
   }
 }
+
+
+// DGM Breadcrumb styles
+// -------------------------------
+
+.breadcrumb                                 { min-height: 30px; margin-bottom: 0; padding: 10px 0; background-color: transparent; border-radius: 0; }
+.breadcrumb > li                            { font-size: 12px; font-weight: 400; line-height: 30px; }
+.breadcrumb > li + li::before               { padding: 0 3px 0 8px; font-size: 13px; }
+.breadcrumb > li > a                        { display: inline; color: #545454; text-transform: capitalize; }
+.breadcrumb > li.active > a,
+.breadcrumb > li:last-child > a,
+.breadcrumb > li > a:hover                  { color: #0c9; }
+.breadcrumb > li:last-child > a             { pointer-events: none; }
+@media (max-width: $screen-md-min)          {
+  .breadcrumb > li                        { font-size: 10px; font-weight: 300; line-height: 20px; }
+}

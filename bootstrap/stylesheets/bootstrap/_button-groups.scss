@@ -11,6 +11,7 @@
   > .btn {
     position: relative;
     float: left;
+    border: 1px solid $dgm-default-button - 20;
     // Bring the "active" button to the front
     &:hover,
     &:focus,

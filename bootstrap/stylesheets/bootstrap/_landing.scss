@@ -1,0 +1,337 @@
+//
+// Landing component
+// --------------------------------------------------
+
+
+#site-functionality {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 100px;
+  width: 340px;
+  height: 45px;
+  padding: 5px 15px 10px;
+  background-color: #0c9;
+  z-index: 9999;
+
+  > p {
+    margin-bottom: 0;
+
+    > a {
+      border-bottom: 1px solid rgba(255,255,255,0.4);
+    }
+  }
+}
+
+#site-functionality > .close {
+  opacity: 1;
+  position: absolute;
+  right: 20px;
+  top: 5px;
+}
+section {
+  margin-bottom: 30px;
+}
+
+.front {
+  h2 {
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #d8d8d8;
+    position: relative;
+
+    > a {
+      color: $dgm-texts;
+
+      &:hover,
+      &:active { text-decoration: none; }
+    }
+
+    &::after {
+      content: '';
+      width: 40px;
+      position: absolute;
+      bottom: -6px;
+      left: 0;
+      border-bottom: solid 5px #0c9;
+    }
+  }
+}
+
+%bottom_20 { margin-bottom: 20px; }
+.home {
+  &.modal-body {
+    padding: 40px 30px;
+    position: relative;
+
+    > p {
+      @extend %bottom_20;
+
+      &:last-child { margin-bottom: 0; }
+    }
+
+    > ul {
+      margin-bottom: 0;
+
+      > li {
+        @extend %bottom_20;
+
+        > img {
+          width: 30px;
+          margin-right: 5px;
+        }
+      }
+    }
+
+    > .btn-close {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      cursor: pointer;
+    }
+
+    .video { margin-bottom: 0; }
+  }
+}
+
+#landing-search {
+  padding-top: 30px;
+  text-align: center;
+  color: rgba(255,255,255,0.9);
+  position: relative;
+  font-size: $font-size-base + 2;
+  line-height: 1.8;
+
+  > img {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    min-height: 100%;
+  }
+
+  .copyright-banner {
+    display: inline-block;
+    padding: 0 5px;
+    line-height: 25px;
+    border-radius: 3px;
+    position: absolute;
+    right: -19px;
+    top: 50%;
+    background-color: rgba(0,0,0,0.6);
+    transform: translateY(-50%) rotate(-90deg);
+
+    > a {
+      color: #fff;
+      font-weight: 300;
+      font-size: 11px;
+
+      &:hover { text-decoration: none; }
+    }
+  }
+
+  h3 {
+    margin-bottom: 20px;
+    font-weight: 300;
+  }
+
+  #landing-search .tags-list li {
+    margin-bottom: 10px;
+    font-size: 11px;
+  }
+
+  .tags-list {
+    margin-top: 30px;
+    margin-bottom: 50px;
+
+    li {
+      display: inline-block;
+      margin-right: 10px;
+      padding: 5px 10px;
+      border-radius: 4px;
+      font-size: 13px;
+      background-color: rgba(0,0,0,0.6);
+
+      &:hover {
+        background-color: rgba(0,0,0,0.7);
+      }
+
+      a {
+        display: block;
+        color: #fff;
+
+        &:hover { text-decoration: none; }
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .categories {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background: -webkit-linear-gradient(rgba(0,0,0,0) 0%, rgba(0,0,0,0.9) 100%);
+    background: -moz-linear-gradient(rgba(0,0,0,0) 0%, rgba(0,0,0,0.9) 100%);
+    background: -o-linear-gradient(rgba(0,0,0,0) 0%, rgba(0,0,0,0.9) 100%);
+    background: linear-gradient(rgba(0,0,0,0) 0%, rgba(0,0,0,0.9) 100%); /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 );
+  }
+
+  .categories-list {
+    padding: 0;
+    list-style: none;
+
+    li {
+      display: inline-block;
+      max-width: 30px;
+
+      a {
+        position: relative;
+
+        > span {
+          position: absolute;
+          width: 90px;
+          top: 29px;
+          left: 50%;
+          margin-left: -45px;
+          font-size: 10px;
+          font-weight: 600;
+          color: #fff;
+          padding: 5px;
+          line-height: 1.5;
+          border-radius: 5px;
+          text-shadow: 2px 2px 2px #000;
+        }
+
+        &:hover,
+        &:active {
+          > span { text-decoration: underline; }
+        }
+      }
+
+      &:last-child { margin-right: 0; }
+
+      @media (min-width: 1100px) { margin-right: 75px; }
+
+      @media (max-width: 1099px) { margin-right: 6.5%; }
+    }
+  }
+
+  @media (min-width: 992px) { padding-bottom: 100px; }
+}
+
+.section-data {
+  .data-list {
+    margin-bottom: 10px;
+    list-style: none;
+    padding: 0;
+
+    li {
+      padding: 0 5px;
+
+      &:first-child { padding-left: 15px; }
+      &:last-child { padding-right: 15px; }
+
+      > span {
+        display: block;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 4px;
+        font-size: 16px;
+        font-weight: 600;
+        text-align: center;
+        background-color: #efefef;
+        cursor: pointer;
+      }
+
+      &.active,
+      &:hover {
+        > span {
+          color: $dgm-white;
+          background-color: $dgm-primary;
+        }
+      }
+    }
+  }
+
+  .data-table {
+    .table {
+      margin-bottom: 0;
+    }
+  }
+}
+
+#landing-subscribe {
+  margin-top: 40px;
+  padding: 50px 0 40px;
+  color: #7a7a7a;
+  background-color: #efefef;
+
+  .row { position: relative; }
+
+  p {
+    margin-bottom: 62px;
+  }
+
+  .social-links {
+    display: inline-block;
+    height: 50px;
+    margin-bottom: 0;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
+    > li {
+      display: inline-block;
+      margin-right: 10px;
+
+      &:last-child { margin-right: 0; }
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  #landing-search {
+    padding-bottom: 60px;
+    
+    .tags-list {
+      li {
+        margin-bottom: 10px;
+        font-size: 11px;
+      }
+    }
+
+    .copyright-banner {
+      top: auto;
+      right: auto;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  #landing-subscribe {
+    p {
+      margin-bottom: 30px;
+      font-size: 12px;
+    }
+
+    .col-sm-12, .col-xs-12 { margin-bottom: 30px; }
+  }
+
+  .section-data {
+    .data-list {
+      li {
+        margin-bottom: 5px;
+        padding: 0 15px;
+
+        &::last-child { margin-bottom: 0; }
+
+        > span { font-size: 12px; }
+      }
+    }
+  }
+}

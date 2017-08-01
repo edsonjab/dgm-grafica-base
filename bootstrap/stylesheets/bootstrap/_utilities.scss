@@ -18,6 +18,8 @@
 .pull-left {
   float: left !important;
 }
+.float-right { @extend .pull-right; }
+.float-left { @extend .pull-left; }
 
 
 // Toggling content
