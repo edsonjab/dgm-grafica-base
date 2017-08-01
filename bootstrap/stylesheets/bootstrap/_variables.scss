@@ -28,11 +28,11 @@ $dgm-texts:             #545454 !default;
 $dgm-borders:           #d8d8d8 !default;
 $dgm-black:             #000 !default;
 $dgm-white:             #fff !default;
+$dgm-disabled:          #f6f6f6 !default;
 $dgm-primary:             $brand-primary !default;
 $dgm-error:               $brand-danger !default;
-$dgm-default-button:      #efefef !default;
-$dgm-secondary-button:    #9b9b9b !default;
-$dgm-disabled:            #f6f6f6 !default;
+$dgm-default-button:    #efefef !default;
+$dgm-secondary-button:  #9b9b9b !default;
 
 
 //== Scaffolding
@@ -462,12 +462,14 @@ $nav-tabs-border-color:                     #ddd !default;
 
 $nav-tabs-link-hover-border-color:          $gray-lighter !default;
 
-$nav-tabs-active-link-hover-bg:             $body-bg !default;
-$nav-tabs-active-link-hover-color:          $gray !default;
+$nav-tabs-active-link-hover-bg:             $dgm-disabled !default;
+$nav-tabs-active-link-hover-color:          $dgm-primary !default;
 $nav-tabs-active-link-hover-border-color:   #ddd !default;
 
 $nav-tabs-justified-link-border-color:            #ddd !default;
 $nav-tabs-justified-active-link-border-color:     $body-bg !default;
+
+$nav-tab-content:                           $dgm-disabled !default;
 
 //== Pills
 $nav-pills-border-radius:                   $border-radius-base !default;
