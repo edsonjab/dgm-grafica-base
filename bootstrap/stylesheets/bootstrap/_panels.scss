@@ -15,6 +15,7 @@
 // Panel contents
 .panel-body {
   padding: $panel-body-padding;
+  background-color: $dgm-disabled;
   @include clearfix;
 }
 
@@ -30,39 +31,48 @@
   }
 
   .collpase-button {
-    border: 1px solid #555;
+    border: 0; //1px solid #555;
     outline: 0;
     background: 0 0;
     display: block;
     width: 30px;
     height: 30px;
-    border-radius: 50%;
+    //border-radius: 50%;
     position: absolute;
     right: 15px;
     top: 50%;
     margin-top: -15px;
-
-    &::before,
-    &::after {
-      content: " ";
-      display: block;
-      position: absolute;
-      background-color: $text-color;
-    }
+    @extend .chevron;
 
     &::before {
-      width: 18px;
-      height: 1px;
-      top: 50%;
-      left: 5px;
+      @extend .chevron.bottom:before;
     }
 
-    &.collapsed::after {
-      width: 1px;
-      height: 18px;
-      top: 5px;
-      left: 50%;
+    &.collapsed::before {
+      @extend .chevron.right:before;
     }
+
+    // &::before,
+    // &::after {
+    //   content: " ";
+    //   display: block;
+    //   position: absolute;
+    //   background-color: $text-color;
+    // }
+
+    // &::before {
+    //   width: 18px;
+    //   height: 1px;
+    //   top: 50%;
+    //   left: 5px;
+    // }
+
+    // &.collapsed::after {
+    //   width: 1px;
+    //   height: 18px;
+    //   top: 5px;
+    //   left: 50%;
+    // }
   }
 }
 
