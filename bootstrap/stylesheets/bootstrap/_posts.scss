@@ -43,6 +43,8 @@
 }
 %post-read-more {
   content: "";
+  position: relative;
+  top: 2px;
   display: inline-block;
   width: 0;
   height: 0;
