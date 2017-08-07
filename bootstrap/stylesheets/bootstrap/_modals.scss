@@ -148,3 +148,34 @@
 @media (min-width: $screen-md-min) {
   .modal-lg { width: $modal-lg; }
 }
+
+
+//
+// DGM Home modals styles
+// ---------------------------------------------
+
+.home {
+  &.modal-body {
+    > p {
+      font-size: 14px;
+      font-weight: 300;
+      > strong {
+        font-size: 18px;
+        font-weight: 700;
+        color: #0c9;
+      }
+    }
+
+    > ul {
+      > li {
+        font-size: 14px;
+        font-weight: 300;
+      }
+    }
+
+    > .btn-close {
+      font-size: 25px;
+      color: #999;
+    }
+  }
+}

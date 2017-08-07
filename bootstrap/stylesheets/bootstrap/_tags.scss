@@ -1,0 +1,58 @@
+//
+// DGM Tag styles
+// ------------------------------------------------------------
+
+.tag-icon {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: $dgm-primary;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 50%;
+  border-radius: 15px;
+  
+  &.tag-cultura-y-turismo, &.tag-culture {
+    background-image: url(../img/ic-cultura-y-turismo.png);
+  }
+  &.tag-desarrollo-sostenible, &.tag-development {
+    background-image: url(../img/ic-desarrollo-sostenible.png);
+  }
+  &.tag-developers {
+    background-image: url(../img/ic-developers-post.png);
+  }
+  &.tag-economia, &.tag-economy {
+    background-image: url(../img/ic-economia.png);
+  }
+  &.tag-educacion, &.tag-education {
+    background-image: url(../img/ic-educacion.png);
+  }
+  &.tag-energia-y-medio-ambiente, &.tag-environment {
+    background-image: url(../img/ic-energia-y-medio-ambiente.png);
+  }
+  &.tag-finanzas-y-contrataciones, &.tag-finance {
+    background-image: url(../img/ic-finanzas-y-contrataciones.png);
+  }
+  &.tag-geoespacial, &.tag-geospatial {
+    background-image: url(../img/ic-geoespacial.png);
+  }
+  &.tag-gobiernos-locales, &.tag-government {
+    background-image: url(../img/ic-gobiernos-locales.png);
+  }
+  &.tag-salud, &.tag-health {
+    background-image: url(../img/ic-salud.png);
+  }
+  &.tag-seguridad-y-justicia, &.tag-security {
+    background-image: url(../img/ic-seguridad-y-justicia.png);
+    background-position: 50% 42%;
+  }
+  &.tag-infraestructura, &.tag-infrastructure {
+    background-image: url(../img/ic-infraestructura.png);
+  }
+
+  @media (max-width: $screen-md-min) {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+  }
+}
