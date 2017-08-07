@@ -155,6 +155,9 @@ output {
     cursor: $cursor-disabled;
   }
 
+  @media (max-width: $screen-md-min) {
+    font-size: 11px;
+  }
   // [converter] extracted textarea& to textarea.form-control
 }
 

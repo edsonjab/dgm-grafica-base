@@ -1,0 +1,37 @@
+//
+// DGM Admin styles
+// -----------------------------------------------------
+
+%checkbox-radio-label {
+  font-weight: 600;
+  color: #666;
+}
+
+.admin {
+  .checkbox {
+    > label {
+      @extend %checkbox-radio-label;
+    }
+  }
+
+  .radio {
+    > label { @extend %checkbox-radio-label; }
+  }
+
+  .form-group {
+    .checkbox > label { color: $dgm-texts; }
+    .radio > label { color: $dgm-texts; }
+  }
+
+  .callout.callout-warning h4 { color: #aa6708; }
+
+  .photo-gallery {
+    margin-top: 30px;
+    .btn {
+      margin-left: 0;
+      margin-right: 10px;
+      margin-bottom: 20px;
+      &:last-child { margin-right: 0; }
+    }
+  }
+}

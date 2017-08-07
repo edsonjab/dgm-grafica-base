@@ -1,0 +1,45 @@
+//
+// DGM Dataset styles
+// ------------------------------------------------------
+
+.dataset-format {
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 0;
+  padding: 3px 5px;
+  &[data-format="csv"], &[data-format="CSV"] {
+    background-color: #ffd100;
+  }
+  &[data-format="kml"], &[data-format="KML"] {
+    background-color: #474747;
+  }
+  &[data-format="geojson"], &[data-format="GEOJSON"], &[data-format="json"], &[data-format="JSON"] {
+    background-color: #33ffd1;
+  }
+  &[data-format="pdf"], &[data-format="PDF"] {
+    background-color: #ff2200;
+  }
+  &[data-format="arcgis"], &[data-format="ARCGIS"] {
+    background-color: #d100FF;
+  }
+  &[data-format="xlsx"], &[data-format="xls"], &[data-format="excel"], &[data-format="vnd.ms-excel"], &[data-format="EXCEL"], &[data-format="VND.MS-EXCEL"], &[data-format="XLS"], &[data-format="XLSX"] {
+    background-color: #00d100;
+  }
+  &[data-format="xml"], &[data-format="XML"] {
+    background-color: #0000d1;
+  }
+  &[data-format="oracle"], &[data-format="ORACLE"] {
+    background-color: #55bada;
+  }
+  &[data-format="shp"], &[data-format="SHP"] {
+    background-color: #bada55;
+  }
+  &[data-format="kmz"], &[data-format="KMZ"] {
+    background-color: #55adab;
+  }
+  &[data-format="zip"], &[data-format="ZIP"] {
+    background-color: #669999;
+  }
+}
