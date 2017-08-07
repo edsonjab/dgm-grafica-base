@@ -30,6 +30,11 @@
   overflow: hidden;
   position: relative;
 }
+%post-info-title {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.8em;
+}
 %post-tag {
   display: block;
   width: 30px;
@@ -257,11 +262,8 @@
 }
 
 .post-info {
-  > h3,
-  .tool-item .inner h3 {
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 1.8em;
+  > h3 {
+    @extend %post-info-title;
   }
   > .excerpt {
     font-size: 12px;
@@ -298,6 +300,7 @@
   .inner {
     @extend %post-inner;
     h3 {
+      @extend %post-info-title;
       margin-top: 0;
       line-height: 30px;
       > a {
