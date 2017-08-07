@@ -6,9 +6,7 @@ Estandarizar la estructura de los contenidos en las dependencias de DGM.
 
 ## Requerimientos:
 
-Node
-Bower
-npm
+Node, Bower y npm
 
 ## Instalación:
 
