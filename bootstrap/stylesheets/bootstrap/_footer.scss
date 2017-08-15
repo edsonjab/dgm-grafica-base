@@ -1,0 +1,31 @@
+//
+// DGM Footer Styles
+// --------------------------------------------------
+
+// Sticky Footer
+// -------------------
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body > #main { overflow: hidden; }
+
+dgm-footer {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+@media (max-width: $screen-sm - 1) {
+  body.front {
+    margin: 0 0 326px;
+  }
+}
+@media (min-width: $screen-sm) {
+  body.front {
+    margin: 0 0 262px;
+  }
+}
