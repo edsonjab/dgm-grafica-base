@@ -22,9 +22,15 @@
 // Optional heading
 .panel-heading {
   position: relative;
-  padding: $panel-heading-padding;
   border-bottom: 1px solid transparent;
   @include border-top-radius(($panel-border-radius - 1));
+
+  > h4 {
+    > a {
+      display: block;
+      padding: $panel-heading-padding;
+    }
+  }
 
   > .dropdown .dropdown-toggle {
     color: inherit;
@@ -51,28 +57,6 @@
     &.collapsed::before {
       @extend .chevron.right:before;
     }
-
-    // &::before,
-    // &::after {
-    //   content: " ";
-    //   display: block;
-    //   position: absolute;
-    //   background-color: $text-color;
-    // }
-
-    // &::before {
-    //   width: 18px;
-    //   height: 1px;
-    //   top: 50%;
-    //   left: 5px;
-    // }
-
-    // &.collapsed::after {
-    //   width: 1px;
-    //   height: 18px;
-    //   top: 5px;
-    //   left: 50%;
-    // }
   }
 }
 
