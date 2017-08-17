@@ -622,58 +622,203 @@ input[type="checkbox"] {
 // DGM Form styles
 // -----------------------
 
-.front .form-group                          { margin-bottom: 10px; }
-.front .form-control                        { height: 50px; padding: 10px 12px; border-color: rgba(0,0,0,0.1); }
-.front .btn                                 { display: block; width: 100%; font-size: 13px; text-transform: uppercase; }
-.front .btn-primary                         { height: 50px; background-color: #0c9; border: none; }
-.front .btn-primary:hover,
-.front .btn-primary:active                  { background-color: #05aa81; }
-.custom-select                              { height: 50px; padding: 0; margin: 0; background: #fff url("../img/ic_arrow_down.png") no-repeat 95% 50%; }
-.custom-select select                       { border: none; box-shadow: none; background-color: transparent; color: #9b9b9b; background-image: none; -webkit-appearance: none; -moz-appearance: none; appearance: none; }
-.custom-select select:focus,
-.custom-select select:active                { outline: none; }
-.admin .custom-select                       { height: 40px; background-position: 98% 50%; }
-.admin .custom-select select                { box-shadow: inset 0 1px 1px rgba(0,0,0,0.075) !important; }
-.form-inline .btn                           { margin-left: 0; }
-.form-inline .custom-select                 { display: inline-block; border-left: 1px solid #ccc; }
-.form-inline .custom-select select          { width: 100%; }
-.search-form                                { margin-top: 20px; margin-bottom: 30px; }
-.search-form.posts input[type="text"],
-.search-form.posts .custom-select           { background-color: #fff; box-shadow: none; border: 1px solid #d8d8d8; }
-.search-form .form-control                  { margin-bottom: 0; border: none; }
-.search-form input[type="text"]             { width: 80%; display: inline-block; border-radius: 4px 0 0 4px; }
-.search-form select.form-control            { border-radius: 0; }
-.search-form .custom-select                 { width: 34%; }
-.search-form .form-control.bootstrap-select { width: 34%; border-radius: 0; }
-.search-form.posts input[type="text"]       { width: 75%; }
-.search-form.posts .custom-select           { width: 20%; border-left: none; position: relative; top: 1px; }
-.search-form .custom-select select:focus    { box-shadow: none; }
-.search-form .btn                           { display: inline-block; width: auto; border-radius: 0 4px 4px 0; }
-.search-form .btn-primary                   { background-color: #292929; }
-.search-form .btn-primary:hover,
-.search-form .btn-primary:active            { background-color: #333; }
-.search-form.posts .btn-primary,
-.search-form.posts .btn-primary:hover       { width: 5%; background-color: transparent; color: #9b9b9b; font-size: 20px; border: 1px solid #d8d8d8; border-left: none; }
-.search-form.posts .bootstrap-select        { width: 20%; border: 1px solid #d8d8d8; border-left: 0; box-shadow: none; }
-.bootstrap-select > .btn                    { border: none; text-align: center; text-transform: none; color: #9b9b9b; position: relative; left: 50%; transform: translateX(-50%); }
-.bootstrap-select > .btn > .bs-caret        { display: inline-block; width: 12px; height: 8px; background-image: url("../img/ic_arrow_down.png"); }
-.bootstrap-select > .btn > .bs-caret .caret { display: none; }
-.bootstrap-select > .btn:hover,
-.bootstrap-select.open > .btn,
-.bootstrap-select.open > .btn:hover         { background-color: transparent; box-shadow: none; color: #9b9b9b; }
-.bootstrap-select > .btn:focus              { background-color: transparent; outline: none; }
-.bootstrap-select.open .dropdown-menu       { margin: 0 auto; }
-.bootstrap-select .dropdown-menu            { background-color: #f6f6f6; border-radius: 0 0 5px 5px; border: none; }
-.bootstrap-select li > a > span             { color: #9b9b9b; }
-.bootstrap-select li.selected,
-.bootstrap-select li:hover,
-.bootstrap-select li.selected > a,
-.bootstrap-select li:hover > a,             { background-color: #0c9; }
-.bootstrap-select li.selected > a > span,
-.bootstrap-select li:hover > a > span       { color: #fff; }
-@media (max-width: 992px)          {
-    .search-form                            { overflow: hidden; }
-    .search-form.posts input[type="text"]   { width: 84%; }
-    .search-form.posts .btn-primary,
-    .search-form.posts .btn-primary:hover   { width: 16%; font-size: 14px; }
+.custom-select {
+  height: 50px;
+  padding: 0;
+  margin: 0;
+  background: #fff url("../img/ic_arrow_down.png") no-repeat 95% 50%;
+  select {
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    color: #9b9b9b;
+    background-image: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    &:focus, &:active {
+      outline: none;
+    }
+  }
+}
+
+.admin .custom-select {
+  height: 40px;
+  background-position: 98% 50%;
+  select {
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075) !important;
+  }
+}
+
+.form-inline {
+  .btn {
+    margin-left: 0;
+  }
+  .custom-select {
+    display: inline-block;
+    border-left: 1px solid #ccc;
+    select {
+      width: 100%;
+    }
+  }
+}
+
+.search-form {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  &.posts {
+    input[type="text"], .custom-select {
+      background-color: #fff;
+      box-shadow: none;
+      border: 1px solid #d8d8d8;
+    }
+  }
+  .form-control {
+    margin-bottom: 0;
+    border: none;
+  }
+  input[type="text"] {
+    width: 80%;
+    display: inline-block;
+    border-radius: 4px 0 0 4px;
+  }
+  select.form-control {
+    border-radius: 0;
+  }
+  .custom-select {
+    width: 34%;
+  }
+  .form-control.bootstrap-select {
+    width: 34%;
+    border-radius: 0;
+  }
+  &.posts {
+    input[type="text"] {
+      width: 75%;
+    }
+    .custom-select {
+      width: 20%;
+      border-left: none;
+      position: relative;
+      top: 1px;
+    }
+  }
+  .custom-select select:focus {
+    box-shadow: none;
+  }
+  .btn {
+    display: inline-block;
+    width: auto;
+    border-radius: 0 4px 4px 0;
+  }
+  .btn-primary {
+    background-color: #292929;
+    &:hover, &:active {
+      background-color: #333;
+    }
+  }
+  &.posts {
+    .btn-primary {
+      width: 5%;
+      background-color: transparent;
+      color: #9b9b9b;
+      font-size: 20px;
+      border: 1px solid #d8d8d8;
+      border-left: none;
+      &:hover {
+        width: 5%;
+        background-color: transparent;
+        color: #9b9b9b;
+        font-size: 20px;
+        border: 1px solid #d8d8d8;
+        border-left: none;
+      }
+    }
+    .bootstrap-select {
+      width: 20%;
+      border: 1px solid #d8d8d8;
+      border-left: 0;
+      box-shadow: none;
+    }
+  }
+}
+
+.bootstrap-select {
+  > .btn {
+    border: none;
+    text-align: center;
+    text-transform: none;
+    color: #9b9b9b;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    > .bs-caret {
+      display: inline-block;
+      width: 12px;
+      height: 8px;
+      background-image: url("../img/ic_arrow_down.png");
+      .caret {
+        display: none;
+      }
+    }
+    &:hover {
+      background-color: transparent;
+      box-shadow: none;
+      color: #9b9b9b;
+    }
+  }
+  &.open {
+    > .btn {
+      background-color: transparent;
+      box-shadow: none;
+      color: #9b9b9b;
+      &:hover {
+        background-color: transparent;
+        box-shadow: none;
+        color: #9b9b9b;
+      }
+    }
+    .dropdown-menu {
+      margin: 0 auto;
+    }
+  }
+  > .btn:focus {
+    background-color: transparent;
+    outline: none;
+  }
+  .dropdown-menu {
+    background-color: #f6f6f6;
+    border-radius: 0 0 5px 5px;
+    border: none;
+  }
+  li {
+    > a > span {
+      color: #9b9b9b;
+    }
+    &.selected, &:hover, &.selected > a, &:hover > a {
+      background-color: #0c9;
+    }
+    &.selected > a > span, &:hover > a > span {
+      color: #fff;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .search-form {
+    overflow: hidden;
+    &.posts {
+      input[type="text"] {
+        width: 84%;
+      }
+      .btn-primary {
+        width: 16%;
+        font-size: 14px;
+        &:hover {
+          width: 16%;
+          font-size: 14px;
+        }
+      }
+    }
+  }
 }
