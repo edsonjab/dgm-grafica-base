@@ -300,3 +300,57 @@
 .panel-danger {
   @include panel-variant($panel-danger-border, $panel-danger-text, $panel-danger-heading-bg, $panel-danger-border);
 }
+
+
+// CKAN panel style
+// ---------------------------
+
+#filter-by {
+  h3 {
+    font-size: 14px;
+    font-weight: 700;
+    color: $dgm-borders;
+    margin: 10px;
+  }
+  .panel {
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+    border-top: 1px solid $dgm-borders;
+    & + .panel {
+      margin: 0;
+    }
+    &:last-child { border-bottom: 1px solid $dgm-borders; }
+    .panel-heading {
+      > h4 > a {
+        font-size: 14px;
+        font-weight: 400;
+        padding: 15px 10px;
+      }
+      .collpase-button { right: 5px; }
+    }
+    .panel-body {
+      padding: 0;
+      > a {
+        display: block;
+        color: $dgm-texts;
+        font-size: 12px;
+        padding: 10px;
+        border-bottom: 1px solid $dgm-borders;
+        &:last-child { border-bottom: 0; }
+        &:hover {
+          color: $dgm-primary;  
+        }
+      }
+    }
+  }
+  .footer-panel {
+    display: block;
+    padding: 15px 10px;
+    color: $dgm-texts;
+    font-weight: 400;
+    border-top: 1px solid $dgm-borders;
+    border-bottom: 1px solid $dgm-borders;
+  }
+}

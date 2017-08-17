@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="https://datos.gob.mx/img/favicon.ico">
+  <title>DGM Paneles colapsables</title>
+  <!-- Polymer -->
+  <script type="text/javascript" src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
+  <link rel="import" href="bower_components/polymer/polymer.html">
+  <link rel="import" href="https://cdn.datos.gob.mx/bower_components/dgm-navbar/dgm-navbar.html">
+  <link rel="import" href="https://cdn.datos.gob.mx/bower_components/dgm-footer/dgm-footer.html">
+  <link rel='stylesheet' href='css/main.css' />
+
+  <!-- Respond.js soporte de media queries para Internet Explorer 8 -->
+  <!-- ie8.js EventTarget para cada nodo en Internet Explorer 8 -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ie8/0.2.2/ie8.js"></script>
+  <![endif]-->
+</head>
+<body class="front">
+  
+  <main role="main">
+    <dgm-navbar></dgm-navbar>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="section-title">Ejemplo de panel colapsable para c-kan</h2>
+        </div>
+        <div class="col-md-3">
+          <div class="panel-group ficha-collapse" id="filter-by">
+            <h3>Filtrar por</h3>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-parent="#filter-by" data-toggle="collapse" href="#panel-01" aria-expanded="false" aria-controls="panel-01">
+                  Categorías
+                  </a>
+                </h4>
+                <button type="button" class="collpase-button collapsed" data-parent="#filter-by" data-toggle="collapse" href="#panel-01"></button>
+              </div>
+              <div class="panel-collapse collapse" id="panel-01">
+                <div class="panel-body">
+                  <a href="#">Gobiernos locales (12)</a>
+                  <a href="#">Seguridad y justicia (11)</a>
+                  <a href="#">Economía (10)</a>
+                  <a href="#">Educación (9)</a>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-parent="#filter-by" data-toggle="collapse" href="#panel-02" aria-expanded="false" aria-controls="panel-02">
+                  Nivel de gobierno
+                  </a>
+                </h4>
+                <button type="button" class="collpase-button collapsed" data-parent="#filter-by" data-toggle="collapse" href="#panel-02"></button>
+              </div>
+              <div class="panel-collapse collapse" id="panel-02">
+                <div class="panel-body">
+                  <a href="#">Autonomo (52)</a>
+                  <a href="#">Federal (31)</a>
+                  <a href="#">Estatal (7)</a>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-parent="#filter-by" data-toggle="collapse" href="#panel-03" aria-expanded="false" aria-controls="panel-03">
+                  Organizaciones
+                  </a>
+                </h4>
+                <button type="button" class="collpase-button collapsed" data-parent="#filter-by" data-toggle="collapse" href="#panel-03"></button>
+              </div>
+              <div class="panel-collapse collapse" id="panel-03">
+                <div class="panel-body">
+                  <a href="#">CONABIO (4679)</a>
+                  <a href="#">GACM (283)</a>
+                  <a href="#">Estado de Jalisco (220)</a>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-parent="#filter-by" data-toggle="collapse" href="#panel-04" aria-expanded="false" aria-controls="panel-04">
+                  Grupos
+                  </a>
+                </h4>
+                <button type="button" class="collpase-button collapsed" data-parent="#filter-by" data-toggle="collapse" href="#panel-04"></button>
+              </div>
+              <div class="panel-collapse collapse" id="panel-04">
+                <div class="panel-body">
+                  <a href="#">Cuidades Inteligentes (29)</a>
+                  <a href="#">#PapaenMex (21)</a>
+                  <a href="#">Tu gobierno en mapas (20)</a>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-parent="#filter-by" data-toggle="collapse" href="#panel-05" aria-expanded="false" aria-controls="panel-05">
+                  Etiquetas
+                  </a>
+                </h4>
+                <button type="button" class="collpase-button collapsed" data-parent="#filter-by" data-toggle="collapse" href="#panel-05"></button>
+              </div>
+              <div class="panel-collapse collapse" id="panel-05">
+                <div class="panel-body">
+                  <a href="#">federal (3451)</a>
+                  <a href="#">Distribución potencial (1858)</a>
+                  <a href="#">GARP (1330)</a>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-parent="#filter-by" data-toggle="collapse" href="#panel-06" aria-expanded="false" aria-controls="panel-06">
+                  Formatos
+                  </a>
+                </h4>
+                <button type="button" class="collpase-button collapsed" data-parent="#filter-by" data-toggle="collapse" href="#panel-06"></button>
+              </div>
+              <div class="panel-collapse collapse" id="panel-06">
+                <div class="panel-body">
+                  <a href="#">SHP (4061)</a>
+                  <a href="#">CSV (1725)</a>
+                  <a href="#">XLS (1719)</a>
+                </div>
+              </div>
+            </div>
+            <a class="footer-panel" href="#">Datos Ciudadanos | datamx.io</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <dgm-footer></dgm-footer>
+  </main>
+  
+  <script src="js/main.js"></script>
+</body>
+</html>
