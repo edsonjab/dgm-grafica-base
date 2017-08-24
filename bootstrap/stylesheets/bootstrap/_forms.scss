@@ -114,7 +114,7 @@ output {
 .form-control {
   display: block;
   width: 100%;
-  height: $input-height-base; // Make inputs at least the height of their button counterpart (base line-height + padding + border)
+  height: 34px; // Make inputs at least the height of their button counterpart (base line-height + padding + border)
   padding: $padding-base-vertical $padding-base-horizontal;
   font-size: $font-size-base;
   line-height: $line-height-base;
@@ -801,6 +801,58 @@ input[type="checkbox"] {
     &.selected > a > span, &:hover > a > span {
       color: #fff;
     }
+  }
+}
+
+// Estilos para filtrado de posts
+// ----------------------------------
+%filter-heigh {
+  height: 50px;
+  padding: 10px 12px;
+}
+.filter-search {
+  > input.form-control {
+    @extend %filter-heigh;
+  }
+  > div.bootstrap-select {
+    @extend %filter-heigh;
+    > button {
+      line-height: 1.2;
+      font-size: 13px;
+      border: 0;
+      background-color: $dgm-white;
+      &:active { background-color: $dgm-white; }
+      &:focus { outline: none !important; }
+    }
+    &.open {
+      > button.dropdown-toggle {
+        color: $dgm-secondary-button;
+        background-color: $dgm-white;
+        border-color: $dgm-white;
+        box-shadow: none;
+      }
+    }
+    .dropdown-menu {
+      &.open {
+        li {
+          &.selected {
+            a {
+              background-color: $dgm-primary;
+              &:hover,
+              &:focus { background-color: $dgm-primary; }
+            }
+          }
+          a {
+            &:hover,
+            &:focus { background-color: $dgm-primary; }
+          }
+        }
+      }
+    }
+  }
+  > button {
+    @extend %filter-heigh;
+    float: right;
   }
 }
 
