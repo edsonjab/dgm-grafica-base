@@ -622,6 +622,13 @@ input[type="checkbox"] {
 // DGM Form styles
 // -----------------------
 
+// Compartido
+// --------------
+%inputs-heighter {
+  height: 50px;
+  padding: 10px 12px;
+}
+
 .custom-select {
   height: 50px;
   padding: 0;
@@ -674,6 +681,7 @@ input[type="checkbox"] {
     }
   }
   .form-control {
+    @extend %inputs-heighter;
     margin-bottom: 0;
     border: none;
   }
@@ -712,9 +720,12 @@ input[type="checkbox"] {
     border-radius: 0 4px 4px 0;
   }
   .btn-primary {
+    @extend %inputs-heighter;
     background-color: #292929;
-    &:hover, &:active {
-      background-color: #333;
+    border-color: #292929;
+    &:hover, &:focus, &:active {
+      background-color: #333 !important;
+      border-color: #333 !important;
     }
   }
   &.posts {
@@ -806,16 +817,13 @@ input[type="checkbox"] {
 
 // Estilos para filtrado de posts
 // ----------------------------------
-%filter-heigh {
-  height: 50px;
-  padding: 10px 12px;
-}
+
 .filter-search {
   > input.form-control {
-    @extend %filter-heigh;
+    @extend %inputs-heighter;
   }
   > div.bootstrap-select {
-    @extend %filter-heigh;
+    @extend %inputs-heighter;
     > button {
       line-height: 1.2;
       font-size: 13px;
@@ -851,7 +859,7 @@ input[type="checkbox"] {
     }
   }
   > button {
-    @extend %filter-heigh;
+    @extend %inputs-heighter;
     float: right;
   }
 }
