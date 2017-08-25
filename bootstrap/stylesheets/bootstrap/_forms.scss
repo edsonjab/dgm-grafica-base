@@ -721,11 +721,20 @@ input[type="checkbox"] {
   }
   .btn-primary {
     @extend %inputs-heighter;
+    position: relative;
     background-color: #292929;
     border-color: #292929;
     &:hover, &:focus, &:active {
       background-color: #333 !important;
       border-color: #333 !important;
+      > div.glyphicon { color: $dgm-white; }
+    }
+    > div.glyphicon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: -10px;
+      margin-left: -10px;
     }
   }
   &.posts {
