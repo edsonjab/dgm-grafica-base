@@ -12,6 +12,7 @@
   <link rel="import" href="https://cdn.datos.gob.mx/bower_components/dgm-navbar/dgm-navbar.html">
   <link rel="import" href="https://cdn.datos.gob.mx/bower_components/dgm-footer/dgm-footer.html">
   <link rel='stylesheet' href='css/main.css' />
+  <link rel='stylesheet' href='css/grafica-base.css' />
 
   <!-- Respond.js soporte de media queries para Internet Explorer 8 -->
   <!-- ie8.js EventTarget para cada nodo en Internet Explorer 8 -->
@@ -101,7 +102,7 @@
             </div>
           </section>
 
-          <section class="separator">
+          <section id="basic-example" class="separator">
             <h2 class="section-title">Ejemplo básico</h2>
             <p>Este es el template básico para agregar una nueva página. Para que el framework funcione correctamente se debe incorporar la liga de los estilos dentro de la etiqueta <code>&lt;head&gt;</code>, y la liga del script antes de cerrarse la etiqueta <code>&lt;body&gt;</code>.</p>
             <p><strong>NOTA:</strong></p>
@@ -150,7 +151,7 @@
 <span class="nt">&lt;/html&gt;</span></code></pre></div>
           </section>
 
-          <section class="separator">
+          <section id="grid-system" class="separator">
             <h2 class="section-title">Sistema de retícula</h2>
             <p>Se incluyó un sistema responsivo, este sistema de fluido se escala de manera apropiada hasta 12 columnas de acuerdo al tamaño del dispositivo o ventana gráfica.</p>
             <h4>Ejemplo:</h4>
@@ -215,7 +216,7 @@
             </div>
           </section>
 
-          <section class="separator">
+          <section id="colors" class="separator">
             <h2 class="section-title">Gama de colores</h2>
             <p>Los colores aquí especificados son lo sque deberán utilizarse en el contenido cuerpo de texto dentro de los documentos deberá ir en negro #545454</p>
             <dl class="top-buffer">
@@ -280,7 +281,7 @@
             </div>
           </section>
 
-          <section class="separator">
+          <section id="sub-nav-bar" class="separator">
             <h2 class="section-title">Barra de subnavegación</h2>
             <p>La barra de  subnavegación es un componente que podrá contener encabezados de navegación en su aplicación o sitio para un uso muy particular. En vistas de móviles están expandidos, y se vuelven horizontales cuando aumenta el ancho de la ventanilla disponible. En caso de utilizar, se deberá de crear justo después de que se haya abierto la etiqueta <code>&lt;main&gt;</code>.</p>
             <h4>Ejemplo básico</h4>
@@ -347,7 +348,7 @@
           <p>Los logotipos de cada secretaría o dependencia se deberán de colorar en la parte superior justo después del breadcrumb. Cada logotipo deberá tener un máximo proporcional a 120px de ancho. Los logotipos deben de tener un color blanco específicamente.</p>
           </section>
 
-          <section class="separator">
+          <section id="forms" class="separator">
             <h2 class="section-title">Formularios</h2>
             <p>Los controles de formularios individuales reciben automáticamente algunos estilos globales. Todos los elemento <code>&lt;input&gt;</code>, <code>&lt;textarea&gt;</code> y <code>&lt;select&gt;</code> con la clase <code>.form-control</code> se componen de un ancho de 100% de forma predeterminada. Para un espaciado más óptimo se deben envolver las etiquetas y los controles con la clase <code>.form-group</code> .</p>
             <h4>Ejemplo básico</h4>
@@ -639,7 +640,7 @@
 <span class="nt">&lt;/select&gt;</span></code></pre></div>
           </section>
 
-          <section class="separator">
+          <section id="buttons" class="separator">
             <h2 class="section-title">Botones</h2>
             <p>Los botones en una interfaz son elementos vitales, ya que en la mayoría de los casos reúnen muchas de las capacidades de navegación que su creador ha concebido.</p>
             <p>Utilice cualquiera de las clases de botones disponibles para crear rápidamente un botón con estilo.</p>
@@ -861,7 +862,7 @@
 <span class="nt">&lt;/button&gt;</span></code></pre></div>
           </section>
 
-          <section class="separator">
+          <section id="pagination" class="separator">
             <h2 class="section-title">Paginación</h2>
             <p>En esta sección se describe todo lo relacionado con paginadores.</p>
             <div class="gobmx-example">
@@ -900,7 +901,7 @@
 <span class="nt">&lt;/ul&gt;</span></code></pre></div>
           </section>
 
-          <section class="separator">
+          <section id="headers" class="separator">
             <h2 class="section-title">Encabezados</h2>
             <p>Los siguientes son ejemplos de encabezados con diferentes tamaños de letra.</p>
             <h1>h1. Ejemplo Texto</h1>
@@ -917,14 +918,14 @@
 <span class="nt">&lt;h6&gt;</span>h6. Ejemplo Texto<span class="nt">&lt;/h6&gt;</span></code></pre></div>
           </section>
 
-          <section class="separator">
+          <section id="header-separators" class="separator">
             <h2 class="section-title">Separadores para encabezados</h2>
             <p> Existen los separadores que vienen acompañados de un encabezado. Para ese caso se le agregará la clase <code>section-title</code> en un <code>h2</code>.</p>
             <div class="highlight"><pre><code class="html"><span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"section-title"</span><span class="nt">&gt;</span>h2. Ejemplo texto<span class="nt">&lt;/h2&gt;</span>
 </code></pre></div>
           </section>
 
-          <section class="separator">
+          <section id="texts" class="separator">
             <h2 class="section-title">Textos</h2>
             <p>El tamaño de fuente estandarizado es de 18px, con un interlineado de 1.428. Esto se aplica a todo el contenido dentro de body. El tamaño mínimo recomendable para el texto es de 16px.</p>
             <p>Para más información ingrese a: <a href="tipografia.html">ejemplos de caso de uso</a>.</p>
@@ -938,7 +939,7 @@
             <div class="highlight"><pre><code class="html"><span class="nt">&lt;p&gt;</span>Lorem ipsum dolor...<span class="nt">&lt;/p&gt;</span></code></pre></div>
           </section>
 
-          <section class="separator">
+          <section id="lists" class="separator">
             <h2 class="section-title">Listas</h2>
             <h4>Lista desordenada</h4>
             <ul>
@@ -996,7 +997,7 @@
 <span class="nt">&lt;/ul&gt;</span></code></pre></div>
           </section>
 
-          <section class="separator">
+          <section id="tables" class="separator">
             <h2 class="section-title">Tablas</h2>
             <p>Para el relleno básico estilo-luz y sólo divisores horizontales se debe añadir la clase base <code>.table</code> a cualquier tabla.</p><br>
               <h4>Ejemplo básico</h4>
@@ -1158,7 +1159,7 @@
 <span class="nt">&lt;/table&gt;</span></code></pre></div>
           </section>
 
-          <section class="separator">
+          <section id="alerts" class="separator">
             <h2 class="section-title">Alertas</h2>
             <h4>Ejemplo de alerta básico</h4>
             <p>Agrega cualquier texto y un botón opcional de cerrar dentro de la clase <code>.alert</code>, después agrega una de las clases contextuales (e.j. <code>.alert-success</code>).</p>
@@ -1200,7 +1201,7 @@
 <span class="nt">&lt;/div&gt;</span></code></pre></div>
           </section>
 
-          <section class="separator">
+          <section id="breadcrumbs" class="separator">
             <h2 class="section-title">Breadcrumbs</h2>
             <p>Indican la ubicación de la página actual dentro de una jerarquía de navegación.</p>
             <div class="example">
@@ -1221,7 +1222,7 @@
 <span class="nt">&lt;/div&gt;</span></code></pre></div>
           </section>
 
-          <section class="separator">
+          <section id="tooltips" class="separator">
             <h2 class="section-title">Tooltip</h2>
             <p>Información contextualizada.</p>
               <div class="example">
@@ -1268,7 +1269,7 @@
           </div>
           </section>
 
-          <section class="separator">
+          <section id="collapsibles" class="separator">
             <h2 class="section-title">Paneles colapsables</h2>
             <p>Paneles colapsables para mostrar/ocultar bloques de forma simultánea.</p>
             <div class="example">
@@ -1328,7 +1329,7 @@
 </div>
           </section>
 
-          <section class="separator">
+          <section id="collapsible-groups" class="separator">
             <h2 class="section-title">Paneles agrupados</h2>
             <div class="example">
               <div class="panel-group ficha-collapse" id="filter-by">
@@ -1441,7 +1442,7 @@
             </div>
           </section>
 
-          <section class="separator">
+          <section id="tabs" class="separator">
             <h2 class="section-title">Pestañas (tabs)</h2>
             <p>Permiten mostrar diferentes tipos de contenido dependiendo de la pestaña seleccionada.</p>
             <div class="example">
@@ -1490,7 +1491,7 @@
 <span class="nt">&lt;/div&gt;</span></code></pre></div>
           </section>
 
-          <section class="separator">
+          <section id="modals" class="separator">
             <h2 class="section-title">Modales</h2>
             <p>Las ventanas modales son indicaciones de diálogo flexibles y dinámicas que permiten mostrar información sobre toda las demás ventanas de la misma aplicación.</p>
             <div class="example example-modal">
@@ -1541,7 +1542,7 @@
             <p>Para más información leer la siguiente documentación: <a href="http://getbootstrap.com/javascript/#modals" target="_blank">Bootstrap Javascript modals</a>.</p>
           </section>
 
-          <section class="separator">
+          <section id="datepickers" class="separator">
             <h2 class="section-title">Selector de fechas (datepicker)</h2>
             <p>El selector de fechas (Datepicker) nos proporciona un calendario personalizable, en el cual podremos realizar selecciones de fechas y asociarlo a elementos HTML.</p>
           </section>
@@ -1611,7 +1612,7 @@
             <p>Para más información leer la siguiente documentación: <a href="http://jqueryui.com/datepicker/" target="_blank">jQuery Datepicker</a>.</p>
           </section>
 
-          <section class="separator">
+          <section id="filters" class="separator">
             <h2 class="section-title">Componente de filtrado</h2>
             <p>Este componente es usado para filtrar búsquedas</p>
             <div class="example">
@@ -1655,7 +1656,7 @@
             </div>
           </section>
 
-          <section class="separator">
+          <section id="icons" class="separator">
             <h2 class="section-title">íconos</h2>
             <h4>Glyphicons</h4>
             <p>Incluye 200 íconos en formato de fuente del conjunto Glyphicon.</p>
@@ -2667,7 +2668,7 @@
             <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"glyphicon glyphicon-search"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span></code></pre></div>
           </section>
 
-          <section class="separator">
+          <section id="iframes" class="separator">
             <h2 class="section-title">Iframes</h2>
             <p>Los iframes deberán utilizarse únicamente en caso de ser necesario.</p>
             <h4>Ejemplo básico</h4>
@@ -2677,7 +2678,7 @@
             <div class="highlight"><pre><code class="html"><span class="nt">&lt;iframe</span> <span class="na">frameborder=</span><span class="s">"0"</span> <span class="na">height=</span><span class="s">"430"</span> <span class="na">src=</span><span class="s">"http://portaltransparencia.gob.mx/"</span> <span class="na">width=</span><span class="s">"100%"</span><span class="nt">&gt;&lt;/iframe&gt;</span></code></pre></div>
           </section>
 
-          <section class="separator">
+          <section id="help" class="separator">
             <h2 class="section-title">Clases de ayuda</h2>
             <p>Existen 3 clases de ayuda que servirán para dar un margen de 64px ya sea superior, inferior o ambos.</p>
             <dl class="dl-horizontal">
@@ -2689,6 +2690,37 @@
               <dd><code>.vertical-buffer</code></dd>
             </dl>
           </section>
+        </div>
+        <div class="col-md-3 right-side-menu">
+          <ul class="list-group">
+            <li class="list-group-item">Guía de estilo para diseño</li>
+            <li class="list-group-item"><a href="#objetivo">Objetivo</a></li>
+            <li class="list-group-item"><a href="#config">Configuración básica</a></li>
+            <li class="list-group-item"><a href="#basic-example">Ejemplo básico</a></li>
+            <li class="list-group-item"><a href="#grid-system">Sitema de retícula</a></li>
+            <li class="list-group-item"><a href="#colors">Colores</a></li>
+            <li class="list-group-item"><a href="#sub-nav-bar">Barra de sub-navegación</a></li>
+            <li class="list-group-item"><a href="#forms">Formularios</a></li>
+            <li class="list-group-item"><a href="#buttons">Botones</a></li>
+            <li class="list-group-item"><a href="#pagination">Paginación</a></li>
+            <li class="list-group-item"><a href="#headers">Encabezados</a></li>
+            <li class="list-group-item"><a href="#header-separators">Encabezados de separación</a></li>
+            <li class="list-group-item"><a href="#texts">Textos</a></li>
+            <li class="list-group-item"><a href="#lists">Listas</a></li>
+            <li class="list-group-item"><a href="#tables">Tablas</a></li>
+            <li class="list-group-item"><a href="#alerts">Alertas</a></li>
+            <li class="list-group-item"><a href="#breadcrumbs">Breadcrumbs</a></li>
+            <li class="list-group-item"><a href="#tooltips">Tooltips</a></li>
+            <li class="list-group-item"><a href="#collapsibles">Colapsables</a></li>
+            <li class="list-group-item"><a href="#collapsible-groups">Colapsables en grupos</a></li>
+            <li class="list-group-item"><a href="#tabs">Pestañas</a></li>
+            <li class="list-group-item"><a href="#modals">Modales</a></li>
+            <li class="list-group-item"><a href="#datepickers">Datepicker</a></li>
+            <li class="list-group-item"><a href="#filters">Filtrados</a></li>
+            <li class="list-group-item"><a href="#icons">Íconos</a></li>
+            <li class="list-group-item"><a href="#iframes">Iframes</a></li>
+            <li class="list-group-item"><a href="#help">Clases de ayuda</a></li>
+          </ul>
         </div>
       </div>
     </div>
