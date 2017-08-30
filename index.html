@@ -1330,7 +1330,7 @@
           </section>
 
           <section id="collapsible-groups" class="separator">
-            <h2 class="section-title">Paneles agrupados</h2>
+            <h2 class="section-title">Colapsables de filtrado</h2>
             <div class="example">
               <div class="panel-group ficha-collapse" id="filter-by">
                 <h3>Filtrar por</h3>
@@ -1372,13 +1372,13 @@
                 <div class="panel panel-default">
                   <div class="panel-heading">
                     <h4 class="panel-title">
-                      <a data-parent="#filter-by" data-toggle="collapse" href="#panel-03" aria-expanded="false" aria-controls="panel-03">
+                      <a data-parent="#filter-by" data-toggle="collapse" href="#orgs" aria-expanded="false" aria-controls="orgs">
                       Organizaciones
                       </a>
                     </h4>
-                    <button type="button" class="collpase-button collapsed" data-parent="#filter-by" data-toggle="collapse" href="#panel-03"></button>
+                    <button type="button" class="collpase-button collapsed" data-parent="#filter-by" data-toggle="collapse" href="#orgs"></button>
                   </div>
-                  <div class="panel-collapse collapse" id="panel-03">
+                  <div class="panel-collapse collapse" id="orgs">
                     <div class="panel-body">
                       <a href="#">CONABIO (4679)</a>
                       <a href="#">GACM (283)</a>
@@ -1389,13 +1389,13 @@
                 <div class="panel panel-default">
                   <div class="panel-heading">
                     <h4 class="panel-title">
-                      <a data-parent="#filter-by" data-toggle="collapse" href="#panel-04" aria-expanded="false" aria-controls="panel-04">
+                      <a data-parent="#filter-by" data-toggle="collapse" href="#groups" aria-expanded="false" aria-controls="groups">
                       Grupos
                       </a>
                     </h4>
-                    <button type="button" class="collpase-button collapsed" data-parent="#filter-by" data-toggle="collapse" href="#panel-04"></button>
+                    <button type="button" class="collpase-button collapsed" data-parent="#filter-by" data-toggle="collapse" href="#groups"></button>
                   </div>
-                  <div class="panel-collapse collapse" id="panel-04">
+                  <div class="panel-collapse collapse" id="groups">
                     <div class="panel-body">
                       <a href="#">Cuidades Inteligentes (29)</a>
                       <a href="#">#PapaenMex (21)</a>
@@ -1406,13 +1406,13 @@
                 <div class="panel panel-default">
                   <div class="panel-heading">
                     <h4 class="panel-title">
-                      <a data-parent="#filter-by" data-toggle="collapse" href="#panel-05" aria-expanded="false" aria-controls="panel-05">
+                      <a data-parent="#filter-by" data-toggle="collapse" href="#tags" aria-expanded="false" aria-controls="tags">
                       Etiquetas
                       </a>
                     </h4>
-                    <button type="button" class="collpase-button collapsed" data-parent="#filter-by" data-toggle="collapse" href="#panel-05"></button>
+                    <button type="button" class="collpase-button collapsed" data-parent="#filter-by" data-toggle="collapse" href="#tags"></button>
                   </div>
-                  <div class="panel-collapse collapse" id="panel-05">
+                  <div class="panel-collapse collapse" id="tags">
                     <div class="panel-body">
                       <a href="#">federal (3451)</a>
                       <a href="#">Distribución potencial (1858)</a>
@@ -1423,13 +1423,13 @@
                 <div class="panel panel-default">
                   <div class="panel-heading">
                     <h4 class="panel-title">
-                      <a data-parent="#filter-by" data-toggle="collapse" href="#panel-06" aria-expanded="false" aria-controls="panel-06">
+                      <a data-parent="#filter-by" data-toggle="collapse" href="#formats" aria-expanded="false" aria-controls="formats">
                       Formatos
                       </a>
                     </h4>
-                    <button type="button" class="collpase-button collapsed" data-parent="#filter-by" data-toggle="collapse" href="#panel-06"></button>
+                    <button type="button" class="collpase-button collapsed" data-parent="#filter-by" data-toggle="collapse" href="#formats"></button>
                   </div>
-                  <div class="panel-collapse collapse" id="panel-06">
+                  <div class="panel-collapse collapse" id="formats">
                     <div class="panel-body">
                       <a href="#">SHP (4061)</a>
                       <a href="#">CSV (1725)</a>
@@ -1440,6 +1440,113 @@
                 <a class="footer-panel" href="#">Datos Ciudadanos | datamx.io</a>
               </div>
             </div>
+            <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-group ficha-collapse"</span> <span class="na">id=</span><span class="s">"filter-by"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;h3&gt;</span>Filtrar por<span class="nt">&lt;/h3&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel panel-default"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-heading"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"panel-title"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">data-parent=</span><span class="s">"#filter-by"</span> <span class="na">data-toggle=</span><span class="s">"collapse"</span> <span class="na">href=</span><span class="s">"#catego"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-controls=</span><span class="s">"catego"</span><span class="nt">&gt;</span>
+        Categorías
+        <span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/h4&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"collpase-button collapsed"</span> <span class="na">data-parent=</span><span class="s">"#filter-by"</span> <span class="na">data-toggle=</span><span class="s">"collapse"</span> <span class="na">href=</span><span class="s">"#catego"</span><span class="nt">&gt;&lt;/button&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-collapse collapse"</span> <span class="na">id=</span><span class="s">"catego"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-body"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Gobiernos locales (12)<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Seguridad y justicia (11)<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Economía (10)<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Educación (9)<span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel panel-default"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-heading"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"panel-title"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">data-parent=</span><span class="s">"#filter-by"</span> <span class="na">data-toggle=</span><span class="s">"collapse"</span> <span class="na">href=</span><span class="s">"#level"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-controls=</span><span class="s">"level"</span><span class="nt">&gt;</span>
+        Nivel de gobierno
+        <span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/h4&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"collpase-button collapsed"</span> <span class="na">data-parent=</span><span class="s">"#filter-by"</span> <span class="na">data-toggle=</span><span class="s">"collapse"</span> <span class="na">href=</span><span class="s">"#level"</span><span class="nt">&gt;&lt;/button&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-collapse collapse"</span> <span class="na">id=</span><span class="s">"level"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-body"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Autonomo (52)<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Federal (31)<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Estatal (7)<span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel panel-default"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-heading"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"panel-title"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">data-parent=</span><span class="s">"#filter-by"</span> <span class="na">data-toggle=</span><span class="s">"collapse"</span> <span class="na">href=</span><span class="s">"#orgs"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-controls=</span><span class="s">"orgs"</span><span class="nt">&gt;</span>
+        Organizaciones
+        <span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/h4&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"collpase-button collapsed"</span> <span class="na">data-parent=</span><span class="s">"#filter-by"</span> <span class="na">data-toggle=</span><span class="s">"collapse"</span> <span class="na">href=</span><span class="s">"#orgs"</span><span class="nt">&gt;&lt;/button&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-collapse collapse"</span> <span class="na">id=</span><span class="s">"orgs"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-body"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>CONABIO (4679)<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>GACM (283)<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Estado de Jalisco (220)<span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel panel-default"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-heading"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"panel-title"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">data-parent=</span><span class="s">"#filter-by"</span> <span class="na">data-toggle=</span><span class="s">"collapse"</span> <span class="na">href=</span><span class="s">"#groups"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-controls=</span><span class="s">"groups"</span><span class="nt">&gt;</span>
+        Grupos
+        <span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/h4&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"collpase-button collapsed"</span> <span class="na">data-parent=</span><span class="s">"#filter-by"</span> <span class="na">data-toggle=</span><span class="s">"collapse"</span> <span class="na">href=</span><span class="s">"#groups"</span><span class="nt">&gt;&lt;/button&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-collapse collapse"</span> <span class="na">id=</span><span class="s">"groups"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-body"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Cuidades Inteligentes (29)<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>#PapaenMex (21)<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Tu gobierno en mapas (20)<span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel panel-default"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-heading"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"panel-title"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">data-parent=</span><span class="s">"#filter-by"</span> <span class="na">data-toggle=</span><span class="s">"collapse"</span> <span class="na">href=</span><span class="s">"#tags"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-controls=</span><span class="s">"tags"</span><span class="nt">&gt;</span>
+        Etiquetas
+        <span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/h4&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"collpase-button collapsed"</span> <span class="na">data-parent=</span><span class="s">"#filter-by"</span> <span class="na">data-toggle=</span><span class="s">"collapse"</span> <span class="na">href=</span><span class="s">"#tags"</span><span class="nt">&gt;&lt;/button&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-collapse collapse"</span> <span class="na">id=</span><span class="s">"tags"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-body"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>federal (3451)<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Distribución potencial (1858)<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>GARP (1330)<span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel panel-default"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-heading"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"panel-title"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">data-parent=</span><span class="s">"#filter-by"</span> <span class="na">data-toggle=</span><span class="s">"collapse"</span> <span class="na">href=</span><span class="s">"#formats"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-controls=</span><span class="s">"formats"</span><span class="nt">&gt;</span>
+        Formatos
+        <span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/h4&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"collpase-button collapsed"</span> <span class="na">data-parent=</span><span class="s">"#filter-by"</span> <span class="na">data-toggle=</span><span class="s">"collapse"</span> <span class="na">href=</span><span class="s">"#formats"</span><span class="nt">&gt;&lt;/button&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-collapse collapse"</span> <span class="na">id=</span><span class="s">"formats"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-body"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>SHP (4061)<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>CSV (1725)<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>XLS (1719)<span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"footer-panel"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Datos Ciudadanos | datamx.io<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
           </section>
 
           <section id="tabs" class="separator">
@@ -1616,10 +1723,11 @@
             <h2 class="section-title">Componente de filtrado</h2>
             <p>Este componente es usado para filtrar búsquedas</p>
             <div class="example">
-              <form ng-submit="query()" class="search-form posts form-inline filter-search ng-pristine ng-valid">
-                <input name="keyword" placeholder="Ej. Atlas de complejidad económica" ng-model="search.keyword" class="form-control ng-pristine ng-valid ng-empty ng-touched" type="text"><div class="btn-group bootstrap-select form-control hidden-xs hidden-sm ng-pristine ng-untouched ng-valid ng-empty">
+              <form class="search-form posts form-inline filter-search">
+                <input name="keyword" placeholder="Ej. Atlas de complejidad económica" class="form-control" type="text"><div class="btn-group bootstrap-select form-control hidden-xs hidden-sm">
                   <button type="button" class="btn dropdown-toggle bs-placeholder btn-default" data-toggle="dropdown" role="button" title="Filtrar por tema">
-                    <span class="filter-option pull-left">Filtrar por tema</span>&nbsp;<span class="bs-caret"><span class="caret"></span></span>
+                    <span class="filter-option pull-left">Filtrar por tema</span>
+                    <span class="bs-caret"></span>
                   </button>
                   <div class="dropdown-menu open" role="combobox">
                     <ul class="dropdown-menu inner" role="listbox" aria-expanded="false">
@@ -1642,11 +1750,25 @@
                         </a>
                       </li>
                       <li data-original-index="3">
-                        <a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false"><span class="text">Economía</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="4"><a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false"><span class="text">Educación</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="5"><a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false"><span class="text">Energía y Medio Ambiente</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="6"><a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false"><span class="text">Finanzas y Contrataciones</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="7"><a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false"><span class="text">Geoespacial</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="8"><a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false"><span class="text">Gobiernos locales</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="9"><a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false"><span class="text">Infraestructura</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="10"><a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false"><span class="text">Salud</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="11"><a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false"><span class="text">Seguridad y Justicia</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li>
+                        <a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false">
+                          <span class="text">Economía</span>
+                          <span class="glyphicon glyphicon-ok check-mark"></span>
+                        </a>
+                      </li>
+                      <li data-original-index="4">
+                        <a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false">
+                          <span class="text">Educación</span>
+                          <span class="glyphicon glyphicon-ok check-mark"></span>
+                        </a>
+                      </li>
                     </ul>
                   </div>
-                  <select name="tag" ng-model="search.tag" ng-options="option._id as option.name for option in options track by option._id" custom-select="custom-select" class="form-control hidden-xs hidden-sm ng-pristine ng-untouched ng-valid ng-empty" tabindex="-98">
-                    <option value="" class="" selected="selected">Filtrar por tema</option><option label="Cultura y Turismo" value="5768ab0e68f81c6e0052015a">Cultura y Turismo</option><option label="Desarrollo Sostenible" value="5768ab0e68f81c6e0052015d">Desarrollo Sostenible</option><option label="Economía" value="5768ab0e68f81c6e00520159">Economía</option><option label="Educación" value="5768ab0e68f81c6e00520158">Educación</option><option label="Energía y Medio Ambiente" value="5768ab0e68f81c6e00520157">Energía y Medio Ambiente</option><option label="Finanzas y Contrataciones" value="5768ab0e68f81c6e0052015b">Finanzas y Contrataciones</option><option label="Geoespacial" value="5768ab0e68f81c6e00520153">Geoespacial</option><option label="Gobiernos locales" value="5768ab0e68f81c6e0052015e">Gobiernos locales</option><option label="Infraestructura" value="5768ab0e68f81c6e0052015c">Infraestructura</option><option label="Salud" value="5768ab0e68f81c6e00520155">Salud</option><option label="Seguridad y Justicia" value="5768ab0e68f81c6e00520156">Seguridad y Justicia</option>
+                  <select name="tag" custom-select="custom-select" class="form-control hidden-xs hidden-sm" tabindex="-98">
+                    <option value="" selected="selected">Filtrar por tema</option>
+                    <option label="Cultura y Turismo" value="Cultura y Turismo">Cultura y Turismo</option>
+                    <option label="Desarrollo Sostenible" value="Desarrollo Sostenible">Desarrollo Sostenible</option>
+                    <option label="Economía" value="Economía">Economía</option>
+                    <option label="Educación" value="Educación">Educación</option>
                   </select>
                 </div>
                 <button type="submit" class="btn btn-primary">
@@ -1654,6 +1776,59 @@
                 </button>
               </form>
             </div>
+            <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"search-form posts form-inline filter-search"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">name=</span><span class="s">"keyword"</span> <span class="na">placeholder=</span><span class="s">"Ej. Atlas de complejidad económica"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group bootstrap-select form-control hidden-xs hidden-sm"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn dropdown-toggle bs-placeholder btn-default"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">title=</span><span class="s">"Filtrar por tema"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"filter-option pull-left"</span><span class="nt">&gt;</span>Filtrar por tema<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"bs-caret"</span><span class="nt">&gt;&lt;/span&gt;</span>
+    <span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-menu open"</span> <span class="na">role=</span><span class="s">"combobox"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"dropdown-menu inner"</span> <span class="na">role=</span><span class="s">"listbox"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">data-original-index=</span><span class="s">"0"</span> <span class="na">class=</span><span class="s">"selected"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">tabindex=</span><span class="s">"0"</span> <span class="na">class=</span><span class="s">""</span> <span class="na">data-tokens=</span><span class="s">"null"</span> <span class="na">role=</span><span class="s">"option"</span> <span class="na">aria-disabled=</span><span class="s">"false"</span> <span class="na">aria-selected=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>Filtrar por tema<span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"glyphicon glyphicon-ok check-mark"</span><span class="nt">&gt;&lt;/span&gt;</span>
+          <span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">data-original-index=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">tabindex=</span><span class="s">"0"</span> <span class="na">class=</span><span class="s">""</span> <span class="na">data-tokens=</span><span class="s">"null"</span> <span class="na">role=</span><span class="s">"option"</span> <span class="na">aria-disabled=</span><span class="s">"false"</span> <span class="na">aria-selected=</span><span class="s">"false"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>Cultura y Turismo<span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"glyphicon glyphicon-ok check-mark"</span><span class="nt">&gt;&lt;/span&gt;</span>
+          <span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">data-original-index=</span><span class="s">"2"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">tabindex=</span><span class="s">"0"</span> <span class="na">class=</span><span class="s">""</span> <span class="na">data-tokens=</span><span class="s">"null"</span> <span class="na">role=</span><span class="s">"option"</span> <span class="na">aria-disabled=</span><span class="s">"false"</span> <span class="na">aria-selected=</span><span class="s">"false"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>Desarrollo Sostenible<span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"glyphicon glyphicon-ok check-mark"</span><span class="nt">&gt;&lt;/span&gt;</span>
+          <span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">data-original-index=</span><span class="s">"3"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">tabindex=</span><span class="s">"0"</span> <span class="na">class=</span><span class="s">""</span> <span class="na">data-tokens=</span><span class="s">"null"</span> <span class="na">role=</span><span class="s">"option"</span> <span class="na">aria-disabled=</span><span class="s">"false"</span> <span class="na">aria-selected=</span><span class="s">"false"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>Economía<span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"glyphicon glyphicon-ok check-mark"</span><span class="nt">&gt;&lt;/span&gt;</span>
+          <span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">data-original-index=</span><span class="s">"4"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">tabindex=</span><span class="s">"0"</span> <span class="na">class=</span><span class="s">""</span> <span class="na">data-tokens=</span><span class="s">"null"</span> <span class="na">role=</span><span class="s">"option"</span> <span class="na">aria-disabled=</span><span class="s">"false"</span> <span class="na">aria-selected=</span><span class="s">"false"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>Educación<span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"glyphicon glyphicon-ok check-mark"</span><span class="nt">&gt;&lt;/span&gt;</span>
+          <span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;/ul&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;select</span> <span class="na">name=</span><span class="s">"tag"</span> <span class="na">custom-select=</span><span class="s">"custom-select"</span> <span class="na">class=</span><span class="s">"form-control hidden-xs hidden-sm"</span> <span class="na">tabindex=</span><span class="s">"-98"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">""</span> <span class="na">selected=</span><span class="s">"selected"</span><span class="nt">&gt;</span>Filtrar por tema<span class="nt">&lt;/option&gt;</span>
+      <span class="nt">&lt;option</span> <span class="na">label=</span><span class="s">"Cultura y Turismo"</span> <span class="na">value=</span><span class="s">"Cultura y Turismo"</span><span class="nt">&gt;</span>Cultura y Turismo<span class="nt">&lt;/option&gt;</span>
+      <span class="nt">&lt;option</span> <span class="na">label=</span><span class="s">"Desarrollo Sostenible"</span> <span class="na">value=</span><span class="s">"Desarrollo Sostenible"</span><span class="nt">&gt;</span>Desarrollo Sostenible<span class="nt">&lt;/option&gt;</span>
+      <span class="nt">&lt;option</span> <span class="na">label=</span><span class="s">"Economía"</span> <span class="na">value=</span><span class="s">"Economía"</span><span class="nt">&gt;</span>Economía<span class="nt">&lt;/option&gt;</span>
+      <span class="nt">&lt;option</span> <span class="na">label=</span><span class="s">"Educación"</span> <span class="na">value=</span><span class="s">"Educación"</span><span class="nt">&gt;</span>Educación<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;/select&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"glyphicon glyphicon-search"</span><span class="nt">&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/form&gt;</span></code></pre></div>
           </section>
 
           <section id="icons" class="separator">
@@ -2712,7 +2887,7 @@
             <li class="list-group-item"><a href="#breadcrumbs">Breadcrumbs</a></li>
             <li class="list-group-item"><a href="#tooltips">Tooltips</a></li>
             <li class="list-group-item"><a href="#collapsibles">Colapsables</a></li>
-            <li class="list-group-item"><a href="#collapsible-groups">Colapsables en grupos</a></li>
+            <li class="list-group-item"><a href="#collapsible-groups">Colapsables de filtrado</a></li>
             <li class="list-group-item"><a href="#tabs">Pestañas</a></li>
             <li class="list-group-item"><a href="#modals">Modales</a></li>
             <li class="list-group-item"><a href="#datepickers">Datepicker</a></li>
