@@ -462,7 +462,7 @@
       &,
       &:hover,
       &:focus {
-        background-color: red;
+        background-color: $dgm-hover-admin-menu;
         color: $navbar-default-link-active-color;
       }
     }
