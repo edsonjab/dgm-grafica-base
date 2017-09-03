@@ -622,6 +622,18 @@ input[type="checkbox"] {
 // DGM Form styles
 // -----------------------
 
+#login-form {
+  margin-top: 60px;
+  margin-bottom: 20px;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 0 1px rgba(0,0,0,0.15),0 1px 15px rgba(0,0,0,0.3);
+  > .logo {
+    padding-bottom: 30px;
+    > img { width: 200px; }
+  }
+}
+
 // Compartido
 // --------------
 %inputs-heighter {
