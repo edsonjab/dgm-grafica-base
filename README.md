@@ -6,11 +6,10 @@ Estandarizar la estructura de los contenidos en las dependencias de DGM.
 
 ## Requerimientos:
 
-Node, Bower y npm
+Node y npm
 
 ## Instalación:
 
-1. Instala dependencias de bower: `bower install`
 2. Instala dependencias de npm: `npm install`
 
 ## Desarrollo:
