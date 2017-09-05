@@ -7,6 +7,20 @@
   color: #666;
 }
 
+.profile-container {
+  margin-top: 20px;
+  background-color: $dgm-white;
+  .user-avatar {
+    position: absolute;
+    width: 20%;
+    top: -110px;
+    left: 40px;
+  }
+  > .row {
+    padding: 30px 0;
+  }
+}
+
 .admin {
   .btn {
     margin-left: 10px;
@@ -28,8 +42,31 @@
   }
 
   .form-group {
+    margin-bottom: 20px;
     .checkbox > label { color: $dgm-texts; }
     .radio > label { color: $dgm-texts; }
+  }
+
+  .form-control {
+    height: 40px;
+  }
+
+  .post-datasets {
+    > input {
+      display: inline-block;
+      width: calc(100% - 150px);
+      margin-bottom: 10px;
+    }
+  }
+
+  .custom-select {
+    height: 40px;
+    border: 1px solid $btn-default-border;
+    border-radius: 4px;
+    background-position: 98% 50%;
+    select {
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075) !important;
+    }
   }
 
   .callout.callout-warning h4 { color: #aa6708; }
@@ -68,6 +105,36 @@
   .table > tbody > tr > td img {
     width: 30px;
     margin-right: 10px;
+  }
+
+  // Datepicker
+  .datepicker-group {
+    width: 100%;
+    .input-group-addon {
+      width: 35px;
+      > .glyphicon { top: -2px; }
+    }
+  }
+  .uib-datepicker {
+    button {
+      position: relative;
+      border-radius: 0;
+      margin: 0;
+      background-color: $dgm-white;
+      &.btn-info.active {
+        background-color: $dgm-primary;
+        border-color: $dgm-primary;
+      }
+    }
+    thead {
+      button {
+        height: 35px;
+        .glyphicon {
+          position: absolute;
+          top: -4px;
+        }
+      }
+    }
   }
 }
 
