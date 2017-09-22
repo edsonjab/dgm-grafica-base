@@ -113,3 +113,105 @@ ol.space li { margin-bottom: 20px; }
   .bs-glyphicons {  margin-left: 0;   margin-right: 0; }
   .bs-glyphicons li {  font-size: 12px;  width: 12.5%; }
 }
+
+
+// Hightlights para DGM
+// -------------------------
+
+.highlight p {
+  margin-bottom: 0;
+  line-height: 1.3em;
+  font-family: "Courier";
+  font-size: 12px;
+  > span {
+    color: #2f6f9f;
+    &.c { @extend .c; }
+    &.k { @extend .k; }
+    &.o { @extend .o; }
+    &.m {  @extend .m; }
+    &.s {  @extend .s; }
+    &.w {  @extend .w; }
+    &.cm { @extend .cm; }
+    &.cp { @extend .cp; }
+    &.c1 { @extend .c1; }
+    &.cs { @extend .cs; }
+    &.gr { @extend .gr; }
+    &.gh { @extend .gh; }
+    &.go { @extend .go; }
+    &.gp { @extend .gp; }
+    &.gu { @extend .gu; }
+    &.gt { @extend .gt; }
+    &.kc { @extend .kc; }
+    &.kd { @extend .kd; }
+    &.kn { @extend .kn; }
+    &.kp { @extend .kp; }
+    &.kr { @extend .kr; }
+    &.kt { @extend .kt; }
+    &.na { @extend .na; }
+    &.nb { @extend .nb; }
+    &.nc { @extend .nc; }
+    &.no { @extend .no; }
+    &.nd { @extend .nd; }
+    &.ni { @extend .ni; }
+    &.ne { @extend .ne; }
+    &.nf { @extend .nf; }
+    &.nl { @extend .nl; }
+    &.nn { @extend .nn; }
+    &.nt { @extend .nt; }
+    &.nv { @extend .nv; }
+    &.ow { @extend .ow; }
+    &.mf { @extend .mf; }
+    &.mh { @extend .mh; }
+    &.mi { @extend .mi; }
+    &.mo { @extend .mo; }
+    &.sb { @extend .sb; }
+    &.sc { @extend .sc; }
+    &.sd { @extend .sd; }
+    &.s2 { @extend .s2; }
+    &.se { @extend .se; }
+    &.sh { @extend .sh; }
+    &.si { @extend .si; }
+    &.sx { @extend .sx; }
+    &.sr { @extend .sr; }
+    &.s1 { @extend .s1; }
+    &.ss { @extend .ss; }
+    &.bp { @extend .bp; }
+    &.vc { @extend .vc; }
+    &.vg { @extend .vg; }
+    &.vi { @extend .vi; }
+    &.il { @extend .il; }
+  }
+  &.double-indent { text-indent: 30px; }
+  &.triple-indent { text-indent: 45px; }
+  &.fourth-indent { text-indent: 60px; }
+  &.fifth-indent { text-indent: 75px; }
+  &.sixth-indent { text-indent: 90px; }
+  &.seventh-indent { text-indent: 90px; }
+  &.first-indent { text-indent: 15px; }
+}
+
+.highlight-form {
+  padding: 20px;
+  label {
+    line-height: 20px;
+    margin-bottom: 5px;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 13px;
+  }
+  p {
+    margin-bottom: 10px;
+    font-size: 13px;
+  }
+}
+
+.element-highlight {
+  background-color: #f7f7f9;
+  border: 1px solid #e1e1e8;
+  font-size: 9px;
+  color: #9b9b9b;
+  margin-bottom: 15px;
+  border-right: none;
+  &:last-child {
+    border-right: 1px solid #e1e1e8;
+  }
+}
