@@ -120,9 +120,9 @@ ol.space li { margin-bottom: 20px; }
 
 .highlight p {
   margin-bottom: 0;
-  line-height: 1.3em;
-  font-family: "Courier";
-  font-size: 12px;
+  line-height: 1.6;
+  font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+  font-size: 13px;
   > span {
     color: #2f6f9f;
     &.c { @extend .c; }
