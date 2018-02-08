@@ -6,10 +6,15 @@
 // -------------------
 html {
   position: relative;
+  height: auto !important;
   min-height: 100%;
 }
 
-body > #main { overflow: hidden; }
+body {
+  position: initial !important;
+  
+  > #main { overflow: hidden; }
+}
 
 dgm-footer {
   width: 100%;
