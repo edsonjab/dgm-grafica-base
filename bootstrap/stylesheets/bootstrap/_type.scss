@@ -344,6 +344,15 @@ h1.big-title,
   }
 }
 
+.third-section-title {
+  font-size: $font-size-h3 - 4;
+  font-weight: $font-weight-semi-bold;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid $dgm-borders;
+  position: relative;
+}
+
 @media (max-width: $screen-md-min) {
   h2 { font-size: 18px; }
 }
