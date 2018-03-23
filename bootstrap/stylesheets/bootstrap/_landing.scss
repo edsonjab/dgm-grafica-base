@@ -177,7 +177,6 @@ section {
   }
 
   .categories-list {
-    display: none;
     padding: 0;
     list-style: none;
 
@@ -188,9 +187,14 @@ section {
       a {
         position: relative;
 
-        // > img[alt] {
-        //   font-size: 0;
-        // }
+        > img[alt] {
+          font-size: 13px;
+          line-height: 1.2;
+          display: inline-table;
+          width: 25px;
+          height: 23px;
+        }
+        > img.loading-content { font-size: 0; }
 
         > span {
           position: absolute;
@@ -352,62 +356,4 @@ section {
       }
     }
   }
-}
-
-
-.preloaders {
-  width: 1280px;
-  height: 90px;
-  margin: auto;
-}
-
-.preloader {
-  width: 5%;
-  margin: 0 1.3%;
-}
-
-.preloader,
-.preloader > * {
-  display: inline-block;
-  position: relative;
-}
-
-.preloader > * {
-  overflow: hidden;
-  margin: 4px 0;
-  background-color: #d3d3d3;
-}
-
-
-
-.preloader > *:before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 10px;
-  height: 100%;
-  background-color: #ccc;
-  box-shadow: 0 0 4px #ccc;
-  animation: loading 1s linear infinite;
-}
-
-@keyframes loading {
-  from {
-    margin-left: 0;
-  }
-  to {
-    margin-left: 100%;
-  }
-}
-
-.prel-img {
-  width: 30px;
-  height: 30px;
-}
-
-.prel-p {
-  width: 100%;
-  height: 15px;
 }

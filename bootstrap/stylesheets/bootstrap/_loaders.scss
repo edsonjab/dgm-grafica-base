@@ -1,0 +1,23 @@
+//
+// Loaders
+// --------------------------------------------------
+
+
+.loading-content {
+  position: relative;
+  background: #eee;
+  background: -moz-linear-gradient(to right, #eee 8%, #ddd 18%, #eee 33%);
+  background: -webkit-linear-gradient(to right, #eee 8%, #ddd 18%, #eee 33%);
+  background: linear-gradient(to right, #eee 8%, #ddd 18%, #eee 33%);
+  background-size: 600% 40%;
+  animation: loadingComponent .7s linear infinite;
+}
+
+@keyframes loadingComponent {
+  from {
+    background-position: 20% 0;
+  }
+  to {
+    background-position: -20% 0;
+  }
+}
