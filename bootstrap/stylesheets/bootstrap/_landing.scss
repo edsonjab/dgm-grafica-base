@@ -101,6 +101,7 @@ section {
   position: relative;
   font-size: $font-size-base + 2;
   line-height: 1.8;
+  overflow: hidden;
 
   > img {
     width: 100%;
